@@ -1,0 +1,75 @@
+/* Full background using Smash image */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url('https://i.imgflip.com/9x6hjo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Overlay to make text pop */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* Smash-style announcement text */
+.announcement {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px 8px black;
+  animation: pulse 1s infinite;
+  transition: opacity 1s ease;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+}
+
+/* Instructions appear after intro */
+.instructions {
+  display: none;
+  animation: fadeIn 1s ease;
+}
+
+.instructions h2 {
+  margin-top: 0;
+  color: #ffe0e0;
+}
+
+.instructions p {
+  margin: 0.5rem 0;
+}
+
+.instructions button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #a32032;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.instructions button:hover {
+  background-color: #8e1a29;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

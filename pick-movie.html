@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pick a Movie</title>
+  <link rel="stylesheet" href="pick-movie.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="announcement" id="introText">🚨 New Challenger Approaching 🚨</div>
+    <div class="instructions" id="instructions">
+    <h2>Word Hunt Showdown</h2>
+    <p>1. Open iMessage and start a <strong>Word Hunt</strong> game.</p>
+    <p>2. Whoever wins gets to spin the movie wheel up to <strong>3 times</strong>.</p>
+    <p>3. You can choose any of your spins, <strong>but the 3rd one is final</strong></p>
+    <button onclick="startWheel()">I Won! Spin the Movie Wheel</button>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('introText').style.opacity = '0';
+      document.getElementById('instructions').style.display = 'block';
+    }, 3000);
+
+    function startWheel() {
+      window.location.href = 'movie-wheel.html';
+    }
+  </script>
+</body>
+</html>

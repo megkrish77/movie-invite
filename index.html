@@ -8,6 +8,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Floating Instruction Icon -->
+  <div class="instructions-icon" onclick="toggleModal()">ℹ️</div>
+
+  <!-- Modal Popup -->
+  <div id="instructionsModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="toggleModal()">&times;</span>
+      <h2>How This Works</h2>
+      <p>Play a quick game to decide who gets to pick the movie and who picks the food!</p>
+      <ul>
+        <li>Click “Pick a Movie” or “Order Food” to begin.</li>
+        <li>You’ll be prompted to start a Word Hunt game on iMessage.</li>
+        <li>Whoever wins gets 3 spins on a randomizer wheel to make the final choice.</li>
+        <li>Once decided, the countdown continues until movie night!</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main UI -->
   <div class="container">
     <div class="countdown-wrapper">
       <div id="countdown">00:00:00</div>

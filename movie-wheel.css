@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #24010c, #6d1222);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #f3c4cc;
+}
+
+.wheel-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+canvas {
+  background-color: transparent;
+}
+
+#posterDisplay {
+  max-width: 220px;
+}
+
+#posterDisplay img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+#spinBtn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background-color: #a32032;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#spinBtn:hover {
+  background-color: #8e1a29;
+}
+
+#spinCount {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}

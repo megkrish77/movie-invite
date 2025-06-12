@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Wheel</title>
+  <link rel="stylesheet" href="movie-wheel.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/zarocknz/javascript-winwheel@master/Winwheel.min.js"></script>
+</head>
+<body>
+  <h1>Spin the Movie Wheel</h1>
+  <div class="wheel-container">
+    <canvas id="movieWheel" width="400" height="400"></canvas>
+    <div id="posterDisplay"></div>
+  </div>
+  <button id="spinBtn" onclick="spinWheel()">🎯 Spin</button>
+  <p id="spinCount"></p>
+  <script src="movie-wheel.js"></script>
+</body>
+</html>
