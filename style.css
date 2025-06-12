@@ -17,20 +17,31 @@ body {
   animation: floatMain 8s ease-in-out infinite;
 }
 
-/* Countdown Label */
-.countdown-label {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  animation: floatAlt 6s ease-in-out infinite;
+/* Countdown Wrapper */
+.countdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  animation: floatMain 8s ease-in-out infinite;
 }
 
-/* Countdown Timer */
+/* Timer */
 #countdown {
-  font-size: 6rem;
+  font-size: 6.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 2.5rem;
   animation: floatAlt 4s ease-in-out infinite;
+}
+
+/* Time label below timer */
+.time-label {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #f3c4cc;
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  animation: floatAlt 6s ease-in-out infinite;
 }
 
 /* Buttons */
@@ -43,10 +54,11 @@ body {
 button {
   background-color: #a32032;
   border: none;
-  padding: 1.2rem 3rem;
+  padding: 0.8rem 2rem;
   font-size: 1.2rem;
   color: white;
-  border-radius: 14px;
+  border-radius: 30px;
+  min-width: 180px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, background-color 0.3s;
   animation: floatAlt 5s ease-in-out infinite;
@@ -82,8 +94,13 @@ button:hover {
     font-size: 3.5rem;
   }
 
+  .time-label {
+    font-size: 1rem;
+  }
+
   button {
     font-size: 1rem;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.5rem;
+    min-width: 160px;
   }
 }
