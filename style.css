@@ -18,6 +18,15 @@ body {
   animation: floatMain 8s ease-in-out infinite;
 }
 
+/* Invite Message */
+.invite-message {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  color: #f3c4cc;
+  margin-bottom: 1.5rem;
+  animation: floatAlt 6s ease-in-out infinite;
+}
+
 /* Countdown Wrapper */
 .countdown-wrapper {
   display: flex;
@@ -70,12 +79,16 @@ button:hover {
   background-color: #8e1a29;
 }
 
-/* Disabled Buttons */
-button:disabled {
-  background-color: #5c1e27;
+/* Disabled Button Style */
+button.disabled {
+  background-color: #555;
+  color: #ccc;
   cursor: not-allowed;
-  opacity: 0.6;
-  transform: none;
+  transform: none !important;
+}
+
+button.disabled:hover {
+  background-color: #555;
 }
 
 /* Floating Animations */
@@ -167,6 +180,10 @@ button:disabled {
 @media (max-width: 600px) {
   #countdown {
     font-size: 3.5rem;
+  }
+
+  .invite-message {
+    font-size: 1.4rem;
   }
 
   .time-label {
